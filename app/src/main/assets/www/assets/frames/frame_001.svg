@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#07070c"/>
+  <circle cx="960" cy="540" r="220" fill="none" stroke="#00ffcc" stroke-width="4" opacity="0.8"/>
+  <circle cx="960" cy="540" r="160" fill="none" stroke="#ff007f" stroke-width="2" opacity="0.6"/>
+  <text x="960" y="520" font-family="monospace" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">SUPER PUFFY</text>
+  <text x="960" y="580" font-family="monospace" font-size="20" fill="#00ffcc" text-anchor="middle">COMMEDY PILOT // 432Hz HARMONIC</text>
+</svg>
