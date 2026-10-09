@@ -1,0 +1,31 @@
+{
+  "project": {
+    "title": "Dragon 9 Telemetry Core",
+    "slug": "d9_core_init",
+    "framerate": 24
+  },
+  "framework": "dragon9_fluid_motion",
+  "system_parameters": {
+    "harmonic_tuning": { "universal_baseline_hz": 432.0 },
+    "cinematography_aesthetic": { "style": "holographic_anime" }
+  },
+  "chapters": [
+    {
+      "scene_id": "init_sequence",
+      "visual_assets": {
+        "base_layer": {
+          "filename": "d9_init.mp4",
+          "resolution": { "width": 1920, "height": 1080 },
+          "status": "ready"
+        }
+      },
+      "audio_assets": {
+        "master_mix": {
+          "filename": "d9_432hz_init.wav",
+          "channels": 2,
+          "status": "ready"
+        }
+      }
+    }
+  ]
+}

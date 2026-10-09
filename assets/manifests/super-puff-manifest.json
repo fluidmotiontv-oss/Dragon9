@@ -1,0 +1,38 @@
+{
+  "project": "Super Puff Live from Pee Dub",
+  "episode": 1,
+  "format": "Animated Stand-Up Comedy Special",
+  "timestamp": "2026-09-19T21:40:36.568Z",
+  "settings": {
+    "resolution": "1080p",
+    "framerate": 24,
+    "audioHz": 432,
+    "aspectRatio": "16:9"
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "title": "Opening Bit: Synchronising Time",
+      "visualPrompt": "Super Puff standing under neon holographic clock showing 54-minute hour countdown, backdrop of rolling Port Waikato black sands, stage lights, cinematic 8k animation style --ar 16:9",
+      "audioVoiceover": "Testing, testing... Is everyone synchronising time properly out there? Welcome, welcome. It is great to be here in Pee Dub.",
+      "audioCue": "comedy_intro_432hz.wav",
+      "durationSeconds": 15
+    },
+    {
+      "sceneId": 2,
+      "title": "Bit: The 26.66-Hour Matrix",
+      "visualPrompt": "Super Puff gesturing animatedly, holographic infographic showing 1,440 minutes reallocated into 26.66 hours, neon green retro phosphor glow --ar 16:9",
+      "audioVoiceover": "Bro, what time is Coronation Street on? My brother in Christ, linear time is a construct!",
+      "audioCue": "synth_laugh_track_stinger.wav",
+      "durationSeconds": 20
+    },
+    {
+      "sceneId": 3,
+      "title": "Closing Bit: The Fluid Motion Future",
+      "visualPrompt": "Super Puff waving goodbye as a digital sunset over Waikato Heads renders in the background, retro terminal UI elements fading out --ar 16:9",
+      "audioVoiceover": "Thank you, Pee Dub! Remember to synchronise time before you leave, and watch out for the titanomagnetite black sand!",
+      "audioCue": "ambient_outro_fluid_motion.wav",
+      "durationSeconds": 15
+    }
+  ]
+}

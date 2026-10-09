@@ -1,0 +1,24 @@
+{
+  "episodeId": "pee-dub-surf-chronicles-ep1",
+  "title": "Pee Dub Surf Chronicles Ep 1",
+  "timestamp": "2026-09-24T13:21:28.114Z",
+  "settings": {
+    "resolution": "1080p",
+    "framerate": 24,
+    "audioHz": 432
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "location": "pee dub",
+      "prompt": "West Coast black sand swells, morning mist over the break, cinematic lighting",
+      "audioCue": "ambient_dub_reggae_intro.wav"
+    },
+    {
+      "id": 2,
+      "location": "pee dub",
+      "prompt": "Clean wave lines, fluid motion carving through the barrel, dynamic camera angle",
+      "audioCue": "surf_action_beat.wav"
+    }
+  ]
+}

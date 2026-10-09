@@ -1,0 +1,38 @@
+{
+  "project": "Pee Dub Surf Chronicles",
+  "episode": 1,
+  "title": "The Fluid Motion Awakening",
+  "timestamp": "2026-09-19T21:27:16.576Z",
+  "settings": {
+    "resolution": "1080p",
+    "framerate": 24,
+    "audioHz": 432,
+    "aspectRatio": "16:9"
+  },
+  "script": [
+    {
+      "sceneId": 1,
+      "heading": "EXT. PORT WAIKATO (PEE DUB) BAR - MORNING",
+      "visualPrompt": "Cinematic wide shot of black sand beach at sunrise, morning mist rolling over the bar, distant swells rolling in, titanomagnetite dark reflections, photorealistic animation style, 8k resolution, moody atmosphere --ar 16:9",
+      "audioCue": "ambient_dub_reggae_432hz.wav",
+      "voiceover": "Before the clock ticks down, before the time synchronises, the coast wakes up to the fluid motion of the future.",
+      "durationSeconds": 12
+    },
+    {
+      "sceneId": 2,
+      "heading": "EXT. THE BREAK - DAY",
+      "visualPrompt": "Close-up action shot of a surfer carving through a clean green barrel, golden morning light refracting through the lip, crystal spray, high-speed shutter effect, dynamic camera tracking --ar 16:9",
+      "audioCue": "surf_action_beat_heavy_bass.wav",
+      "voiceover": "Catching the rhythm where the swell meets the sand. No friction, just pure flow.",
+      "durationSeconds": 15
+    },
+    {
+      "sceneId": 3,
+      "heading": "INT. LOCAL NODE - DAY",
+      "visualPrompt": "Holographic retro-futuristic terminal interface displaying temporal grids and wave data, green retro phosphor glow, minimalist command center setup --ar 16:9",
+      "audioCue": "terminal_pulse_ambient.wav",
+      "voiceover": "Synchronising time across the mesh network. Everything locked into the motion.",
+      "durationSeconds": 10
+    }
+  ]
+}
