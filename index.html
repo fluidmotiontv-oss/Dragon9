@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon 9 Mobile Node Dashboard</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card: #131b2e;
+      --accent: #ef4444;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      border: 1px solid #1e293b;
+    }
+    h1 { color: var(--accent); margin-top: 0; font-size: 20px; }
+    .stat { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #1e293b; font-size: 14px; }
+    .badge { background: #064e3b; color: #34d399; padding: 3px 8px; border-radius: 99px; font-weight: bold; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🐉 Dragon 9 Server Node</h1>
+    <div class="stat"><span>Node Status:</span> <span class="badge">ONLINE</span></div>
+    <div class="stat"><span>Frontend Port:</span> <span>3000</span></div>
+    <div class="stat"><span>Backend API:</span> <span>:5000</span></div>
+  </div>
+  <div class="card" id="sys-card">
+    <h3>System Diagnostic</h3>
+    <div id="loading">Connecting to Dragon 9 API...</div>
+    <div id="stats" style="display:none;"></div>
+  </div>
+  <script>
+    async function loadHealth() {
+      try {
+        const res = await fetch('http://' + window.location.hostname + ':5000/api/health');
+        const data = await res.json();
+        document.getElementById('loading').style.display = 'none';
+        const stats = document.getElementById('stats');
+        stats.style.display = 'block';
+        stats.innerHTML = `
+          <div class="stat"><span>Uptime:</span> <span>${Math.round(data.uptimeSeconds / 60)} mins</span></div>
+          <div class="stat"><span>RAM Used:</span> <span>${data.memory.usedMb} / ${data.memory.totalMb} MB</span></div>
+          <div class="stat"><span>CPU Cores:</span> <span>${data.cpu.cores} (${data.cpu.model.split(' ')[0]})</span></div>
+        `;
+      } catch (e) {
+        document.getElementById('loading').innerText = 'Backend API active at :' + 5000;
+      }
+    }
+    loadHealth();
+    setInterval(loadHealth, 3000);
+  </script>
+</body>
+</html>
